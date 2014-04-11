@@ -10,8 +10,9 @@ package highlow;
  * @author Liviu
  */
 public class BlackjackHand extends Hand{
-    /** Computes and returns the value of this hand in the game
+        /** Computes and returns the value of this hand in the game
      * of Blackjack
+     * @return val the value of this hand.
      */
     public int getBlackjackValue() {
         int val;                    // The value computed for the hand
