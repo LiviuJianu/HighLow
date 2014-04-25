@@ -17,6 +17,7 @@ public enum CardValue {
     /**
      * Return the calue of this CardValue in the game of Blackjack.
      * Note that the value returned for an ace is 1.
+     * @return Card value
      */
     public int blackJackValue() {
         if(this == JACK || this == QUEEN || this == KING)
@@ -28,7 +29,9 @@ public enum CardValue {
     /**
      * Return a String representation of this CardValue, using numbers
      * for the numerical cards and names for the ace and face cards.
+     * @return Card name as String
      */
+    @Override
     public String toString() {
         switch(this) { // "this" is one of the enumerated type values
             case ACE: 
